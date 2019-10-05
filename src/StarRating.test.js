@@ -2,15 +2,35 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import StarRating from './StarRating';
 
-it('renders filled stars with the filledColor value', () => {
+it('renders 5 stars by default', () => {
 
 });
 
-it('renders empty stars with the emptyColor value', () => {
+it('renders a specified number of stars', () => {
+  // test the starCount prop
+});
+
+it('renders empty stars with color #bbb by default', () => {
 
 });
 
-it('renders stars using the size value', () => {
+it('renders empty stars with the color of the emptyColor value', () => {
+
+});
+
+it('renders filled stars as yellow by default', () => {
+
+});
+
+it('renders filled stars with the color of the filledColor value', () => {
+
+});
+
+it('renders a star using the 1x size by default', () => {
+
+});
+
+it('renders a star using the size value', () => {
 
 });
 
@@ -29,4 +49,3 @@ it('updates when clicking on an empty star', () => {
 it('sets the value to 0 when clicking on a filled star', () => {
 
 });
-

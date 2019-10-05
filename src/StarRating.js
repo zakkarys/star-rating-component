@@ -1,6 +1,6 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 function Star({ number, value, onClick, emptyColor, filledColor, size }) {
   function handleClick() {
@@ -8,7 +8,11 @@ function Star({ number, value, onClick, emptyColor, filledColor, size }) {
   }
 
   return (
-    <span className="clickable" onClick={handleClick} data-index={`star-${number}`}>
+    <span
+      className="clickable"
+      onClick={handleClick}
+      data-index={`star-${number}`}
+    >
       <FontAwesomeIcon
         icon={faStar}
         color={number <= value ? filledColor : emptyColor}
@@ -18,10 +22,20 @@ function Star({ number, value, onClick, emptyColor, filledColor, size }) {
   );
 }
 
-export default function StarRating({ value, onClick, emptyColor, filledColor, size }) {
+export default function StarRating(props) {
+  const {
+    className,
+    value,
+    onClick,
+    emptyColor = "#bbb",
+    filledColor = "yellow",
+    size = "1x",
+    starCount = 5
+  } = props;
+
   return (
-    <span>
-      {[...Array(5).keys()].map((position) => {
+    <span className={className}>
+      {[...Array(starCount).keys()].map(position => {
         return (
           <Star
             emptyColor={emptyColor}

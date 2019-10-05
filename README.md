@@ -1,8 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). You can find a demo of this project at [https://davids-star-rating-component.surge.sh/](https://davids-star-rating-component.surge.sh/).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). You can find a demo of this project at [https://discreet-fold.surge.sh](https://discreet-fold.surge.sh).
 
 ## Assignment Instructions
 
-Fork this repo and complete the tests located in `src/StarRating.test.js`. Once you are finished (all of the tests should be passing), set your repo up with [Travis CI](https://travis-ci.org/) and add a [status badge](https://docs.travis-ci.com/user/status-images/) to the top of this README. If the status badge color doesn't match the status on the Travis site, hard refresh a few times.
+Fork this repo and complete the tests located in `src/StarRating.test.js`. Once you are finished (all of the tests should be passing), set up your repo with [Travis CI](https://travis-ci.org/) and add a [status badge](https://docs.travis-ci.com/user/status-images/) to the top of this README. If the status badge color doesn't match the status on the Travis site, hard refresh a few times.
 
 ## Available Scripts
 
