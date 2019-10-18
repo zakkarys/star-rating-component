@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
+import "@testing-library/jest-dom/extend-expect";
 
 function Star({ number, value, onClick, emptyColor, filledColor, size }) {
   function handleClick() {
@@ -9,6 +10,7 @@ function Star({ number, value, onClick, emptyColor, filledColor, size }) {
 
   return (
     <span
+      data-testid="stars"
       className="clickable"
       onClick={handleClick}
       data-index={`star-${number}`}
